@@ -13,22 +13,29 @@
             <h2>注册</h2>
             <div class="mod-form-username">
                 <label for="username">请输入用户名</label>
-                <input type="text" name="" id="username" placeholder="请输入用户名">
+                <input type="text" name="" id="username" minlength="6" maxlength="15" required placeholder="请输入用户名" autocomplete="off">
+                <span></span>
             </div>
             <div class="mod-form-email">
                 <label for="email">请输入邮箱</label>
-                <input type="text" name="" id="email" placeholder="请输入邮箱">
+                <input type="email" name="" id="email"  required placeholder="请输入邮箱" autocomplete="off">
+                <span></span>
             </div>
             <div class="mod-form-password">
                 <label for="password">请输入密码</label>
-                <input type="text" name="" id="password" placeholder="请输入密码">
+                <input type="password" name="" id="password" minlength="8" maxlength="20" required placeholder="请输入密码" autocomplete="off">
+                <span></span>
             </div>
             <div class="mod-form-confirm-psw">
                 <label for="checkPsw">确认密码</label>
-                <input type="text" name="" id="checkPsw" placeholder="请在输入一次密码">
+                <input type="password" name="" id="checkPsw" minlength="8" maxlength="20" required placeholder="请在输入一次密码" autocomplete="off">
+                <span></span>
             </div>
-            <button>注册</button>
+            <button type="submit">注册</button>
         </div>
     </div>
+
+
+    <script src="./static/index.js"></script>
 </body>
 </html>
