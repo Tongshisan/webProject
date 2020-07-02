@@ -31,11 +31,10 @@ html, body {
 h2 {
     margin-top: 20px;
 }
-.mod-form-username,
-.mod-form-email,
-.mod-form-password,
-.mod-form-confirm-psw {
-    margin-top: 20px;
+
+.form-item {
+    position: relative;
+    margin-top: 30px;
     width: 100%;
 }
 label {
@@ -68,6 +67,21 @@ button {
     cursor: pointer;
 }
 span {
+    position: absolute;
+    bottom: -20px;
     font-size: 13px;
     color: #e74c3c;
+    visibility: hidden;
+}
+.error span {
+    visibility: visible;
+}
+.error input {
+    border: 2px solid #e74c3c;
+}
+.success input {
+    border: 2px solid #2ecc71;
+}
+.success span {
+    visibility: hidden;
 }
