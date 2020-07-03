@@ -42,11 +42,12 @@ select {
 }
 .seat-status-item {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     width: 30%;
 }
 .seat-status-item span {
+    margin-left: 5px;
     color: #777;
     font-size: 13px;
 }
