@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: #242333;
+}
+
+.mod {
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    width: 300px;
+    height: 400px;
+}
+.mod span {
+    color: #fff;
+}
+select {
+    margin-left: 10px;
+    width: 150px;
+    height: 30px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    appearance: none;
+}
+.seat-status {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+    width: 90%;
+    height: 30px;
+    background: rgba(0, 0, 0, .1);
+}
+.seat-status-item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+}
+.seat-status-item span {
+    color: #777;
+    font-size: 13px;
+}
+.seat {
+    width: 15px;
+    height: 12px;
+    background: #444451;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.selected {
+    background: #6feaf6;
+}
+.occupied {
+    background: #fff;
+}
+.screen {
+    margin-top: 40px;
+    width: 200px;
+    height: 0;
+    border: 10px solid transparent;
+    border-top: 50px solid #fff;
+}
+.container {
+    display: flex;
+    margin-top: 30px;
+    width: 60%;
+    height: 100px;
+}
+.container .left {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.container .middle {
+    margin:0 10px 0 10px;
+    flex: 1.7;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.container .right {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.container .seat {
+    cursor: pointer;
+}
+.container .seat:hover {
+    transform: scale(1.2)
+}
+.container .occupied {
+    cursor: auto;
+}
+.container .occupied:hover {
+    transform: scale(1)
+}
+.total-price {
+    margin-top: 40px;
+    color: #fff;
+}
+.total-price span {
+    color: aqua;
+}
