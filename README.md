@@ -6,5 +6,4 @@
 | -----  |  ------| -------- |
 | [表单验证](https://github.com/Tongshisan/webProject/tree/master/%E8%A1%A8%E5%8D%95%E9%AA%8C%E8%AF%81) | 完成 | [Demo](https://tongshisan.github.io/webProject/%E8%A1%A8%E5%8D%95%E9%AA%8C%E8%AF%81/) |
 | [电影院选座](https://github.com/Tongshisan/webProject/tree/master/%E7%94%B5%E5%BD%B1%E9%99%A2%E9%80%89%E5%BA%A7) | 完成 | [Demo](https://tongshisan.github.io/webProject/%E7%94%B5%E5%BD%B1%E9%99%A2%E9%80%89%E5%BA%A7/) |
-| [视频播放器](https://github.com/Tongshisan/webProject/tree/master/%E8%A7%86%E9%A2%91%E6%92%AD%E6%94%BE%E5%99%A8) | 开发中 | [Demo](https://tongshisan.github.io/
-%E8%A7%86%E9%A2%91%E6%92%AD%E6%94%BE%E5%99%A8) |
+| [视频播放器](https://github.com/Tongshisan/webProject/tree/master/%E8%A7%86%E9%A2%91%E6%92%AD%E6%94%BE%E5%99%A8) | 开发中 | [Demo](https://tongshisan.github.io/webProject/%E8%A7%86%E9%A2%91%E6%92%AD%E6%94%BE%E5%99%A8/) |
