@@ -58,7 +58,9 @@ function doubleUserMoney() {
     users.map((item) => {
         item.money = item.money * 2
     })
-    getTotalMoney()
+    // getTotalMoney()
+    total_money *= 2
+    totalMoney.innerHTML = `￥ ${total_money}`
     updateDOM()
 }
 
