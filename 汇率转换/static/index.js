@@ -20,9 +20,11 @@ currencyCount.addEventListener('change', () => {
 })
 
 // 货币1 变换
-currencyOne.addEventListener('change', currencyOneChange())
+// 这里的   currencyOneChange 要使用函数名, 
+// 不能这样使用     currencyOneChange()
+currencyOne.addEventListener('change', currencyOneChange)
 
-// 货币1交换函数
+// 货币1变换函数
 function currencyOneChange() {
     let url = `https://api.exchangerate-api.com/v4/latest/${currencyOne.value}`
     getRate(url).then(response => {
