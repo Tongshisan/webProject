@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.container {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    width: 25%;
+    height: 60%;
+}
+header {
+    position: relative;
+    font-size: 40px;
+    color: #000;
+}
+.add-card {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 100px;
+    height: 30px;
+    border: 1px solid #aaa;
+    border-radius:4px;
+    background: #fff;
+    color: #000;
+    transform: translate(120%, -50%);
+    cursor: pointer;
+}
+footer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    width: 40%;
+}
+
+footer > span {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+}
+.cards {
+    perspective: 1000;
+    position: relative;
+    margin-top: 30px;
+    width: 500px;
+    height: 300px;
+    transform-style: preserve-3d;
+}
+.card {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform .6s ease;
+}
+.card-front,
+.card-back {
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500px;
+    height: 300px;
+    border: 1px solid #aaa;
+    box-shadow: 0 0 5px #aaa;
+}
+.card-front {
+    z-index: 2;
+}
+.card-back {
+    transform: rotateY(180deg);
+}
+.cards:hover .card {
+    transform: rotateY(180deg) ;
+}
