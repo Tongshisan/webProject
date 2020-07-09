@@ -52,6 +52,7 @@ body {
     height: 100%;
 }
 .income-money {
+    margin-top: 3px;
     font-size: 20px;
     color: #2ecc71;
 }
