@@ -17,6 +17,7 @@ body {
     flex-flow: column;
     align-items: center;
     width: 20%;
+    min-width: 350px;
     height: 90%;
 }
 .balance {
@@ -63,7 +64,8 @@ body {
     height: 80%;
     background: #aeaeae;
 }
-.history {
+.history,
+.add-transaction {
     display: flex;
     flex-flow: column wrap;
     justify-content: space-around;
@@ -80,6 +82,7 @@ body {
 
 }
 li {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -97,4 +100,38 @@ li {
 }
 .less {
     border-right: 5px solid #c0392b;
+}
+.delete-button {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    border: 0;
+    color: #fff;
+    background: #e74c3c;
+    cursor: pointer;
+    transform: translate(-100%, -50%);
+    opacity: 0;
+}
+li:hover .delete-button {
+    opacity: 1;
+}
+.add-transaction p {
+    margin-top: 20px;
+}
+.add-transaction input {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 18px;
+}
+.add-transaction button {
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+    border: 0;
+    background: #9c88ff;
+    color: #fff;
+    cursor: pointer;
 }
