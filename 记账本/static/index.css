@@ -124,6 +124,7 @@ li:hover .delete-button {
 .add-transaction input {
     margin-top: 10px;
     padding: 10px;
+    width: 100%;
     font-size: 18px;
 }
 .add-transaction button {
