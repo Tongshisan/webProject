@@ -15,7 +15,7 @@ body > div {
     display: flex;
     flex-flow: column;
     align-items: center;
-    width: 30%;
+    width: 40%;
     height: 65%;
 }
 img {
@@ -42,7 +42,7 @@ h1 {
 }
 .currency-one input {
     padding-right: 10px;
-    width: 200px;
+    width: 400px;
     height: 46px;
     border: 0;
     text-align: right;
@@ -56,7 +56,7 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 270px;
+    width: 470px;
 }
 button {
     width: 70px;
