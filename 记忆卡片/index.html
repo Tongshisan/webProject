@@ -11,21 +11,31 @@
 
 <body>
     <div class="container">
-        <header>记忆卡片<button class="add-card">添加卡片</button></header>
+        <header>记忆卡片<button class="add-card" id="addCardBtn">添加卡片</button></header>
+
         <div class="cards">
-            <div class="card">
+
+            <div class="card active">
                 <div class="card-front">正面</div>
                 <div class="card-back">反面</div>
             </div>
             
+            <div class="card right">
+                <div class="card-front">0</div>
+                <div class="card-back">1</div>
+            </div>
+
         </div>
         <footer>
-            <span>&larr;</span>
-            <p>1/5</p>
-            <span>&rarr;</span>
+            <span id="pre">&larr;</span>
+            <p><span id="cardIndexSpan"></span> / <span id="cardCountSpan"></span></p>
+            <span id="next">&rarr;</span>
         </footer>
     </div>
 
+    <div class="add-card-div">
+        5
+    </div>
 
     <script src="./static/index.js"></script>
 </body>

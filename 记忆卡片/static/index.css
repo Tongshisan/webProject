@@ -50,7 +50,7 @@ footer > span {
     cursor: pointer;
 }
 .cards {
-    perspective: 1000;
+    perspective: 1000px;
     position: relative;
     margin-top: 30px;
     width: 500px;
@@ -59,8 +59,17 @@ footer > span {
 }
 .card {
     position: relative;
+    opacity: 0;
     transform-style: preserve-3d;
-    transition: transform .6s ease;
+    transition: .6s ease;
+    transform: translateX(50%) 
+}
+.active {
+    opacity: 1;
+    transform: translateX(0) 
+}
+.left {
+    transform: translateX(-50%) rotateY(10deg);
 }
 .card-front,
 .card-back {
@@ -83,5 +92,12 @@ footer > span {
     transform: rotateY(180deg);
 }
 .cards:hover .card {
-    transform: rotateY(180deg) ;
+    transform: rotateY(-180deg) ;
+}
+
+.left{
+    transform: translateX(-50%) rotateY(10deg);
+}
+.add-card-div {
+    
 }
