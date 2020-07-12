@@ -13,7 +13,7 @@
     <div class="container">
         <header>记忆卡片<button class="add-card" id="addCardBtn">添加卡片</button></header>
 
-        <div class="cards">
+        <div class="cards" id="cards">
 
             <div class="card active">
                 <div class="card-front">正面</div>
@@ -33,10 +33,19 @@
         </footer>
     </div>
 
-    <div class="add-card-div">
-        5
+    <div class="add-card-div" id="addCardDiv">
+        <div class="add-card-div-header" id="cancelBtn">X</div>
+        <h2>添加新卡片</h2>
+        <div class="add-card-div-question">
+            <h3>问题</h3>
+            <textarea  id="question" cols="10" rows="5" placeholder="请输入问题"></textarea>
+        </div>
+        <div class="add-card-div-answer">
+            <h3>答案</h3>
+            <textarea  id="answer" cols="10" rows="5" placeholder="请输入答案"></textarea>
+        </div>
+        <button class="confirm-btn" id="confirmBtn">添加</button>
     </div>
-
     <script src="./static/index.js"></script>
 </body>
 

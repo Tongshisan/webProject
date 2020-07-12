@@ -99,5 +99,56 @@ footer > span {
     transform: translateX(-50%) rotateY(10deg);
 }
 .add-card-div {
-    
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    display: flex;
+    flex-flow: column wrap;
+    width: 650px;
+    height: 480px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    box-shadow: 0 0 10px #aaa;
+    visibility: hidden;
+    opacity: 0;
+    background: #fff;
+    transform: translateX(-50%);
+    transition: .5s;
+    z-index: 999;
+}
+.show-add-card-div {
+    top: 200px;
+    opacity: 1;
+    visibility: visible;
+    z-index: 999;
+}
+.add-card-div-header {
+    align-self: flex-end;
+    margin: 25px 25px 0 0;
+    cursor: pointer;
+}
+.add-card-div-question,
+.add-card-div-answer {
+    display: flex;
+    flex-flow: column wrap;
+    margin: 20px 30px 0 30px;
+}
+.add-card-div h2 {
+    align-self: center;
+    margin-top: 15px;
+}
+.add-card-div textarea {
+    margin-top: 10px;
+    padding: 10px;
+}
+.confirm-btn {
+    align-self: center;
+    margin-top: 20px;
+    width: 200px;
+    height: 40px;
+    background: #fff;
+    color: #000;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    cursor: pointer;
 }
