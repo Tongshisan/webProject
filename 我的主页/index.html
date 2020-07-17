@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,16 +8,58 @@
     <link rel="stylesheet" href="./static/index.css">
     <title>Document</title>
 </head>
+
 <body>
     <nav>
-        <div class="avator">
-            <img src="./static/img/index.jpeg" alt="">
+        <div class="nav-main">
+            <div class="avator">
+                <img src="./static/img/index.jpeg" alt="">
+            </div>
+            <ul>
+                <li>主页</li>
+                <li>相册</li>
+                <li>博客</li>
+            </ul>
         </div>
-        <ul>
-            <li>主页</li>
-            <li>相册</li>
-            <li>博客</li>
-        </ul>
+        <div class="show-nav-btn" id="showNavBtn">
+            <img src="./static/img/展开.png" alt="">
+        </div>
     </nav>
+    <header>
+        <h1>我的主页</h1>
+        <p>如你, 才华横溢</p>
+        <button id="loginBtn">登录</button>
+    </header>
+    <main>
+        <div class="container">
+            <h2>关于我的主页</h2>
+            <p>闲着没事乱写的</p>
+            <h2>请回答 1988</h2>
+            <p>德善啊, 崔喜东, 狗正八, 娃娃鱼</p>
+            <h2>阴阳师</h2>
+            <p>许愿八岐大蛇, 许愿缘结神, 许愿缚骨清姬, 许愿大舅妈</p>
+        </div>
+    </main>
+    <div class="login-page" id="loginPage">
+        <div class="login-page-container">
+            <div class="login-page-container-header">
+                <h3>登录</h3>
+                <h3 id="closeLoginPage" class="close-login-page">X</h3>
+            </div>
+            <div class="login-page-container-main">
+                <h4>姓名</h4>
+                <input type="text" id="name" placeholder="请输入姓名">
+                <h4>邮箱</h4>
+                <input type="email" id="email" placeholder="请输入邮箱">
+                <h4>密码</h4>
+                <input type="password" id="password" placeholder="请输入密码">
+                <h4>确认密码</h4>
+                <input type="password" id="checkPsw" placeholder="请再次输入密码">
+                <button id="login">登录</button>
+            </div>
+        </div>
+    </div>
+    <script src="./static/index.js"></script>
 </body>
+
 </html>
