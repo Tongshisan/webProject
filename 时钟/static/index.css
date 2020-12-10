@@ -40,7 +40,17 @@ body {
 .second-hand {
     width: 120px;
     border: 1px solid red;
-    animation: second-hand 60s linear infinite;
+    /* animation: second-hand 60s linear  infinite; */
+    animation: second-hand2 60s steps(60);
+}
+
+@keyframes second-hand2 {
+    from {
+        transform: rotate(-90deg);
+    }
+    to {
+        transform: rotate(270deg);
+    }
 }
 
 @keyframes second-hand {
