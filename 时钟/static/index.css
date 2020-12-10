@@ -41,7 +41,7 @@ body {
     width: 120px;
     border: 1px solid red;
     /* animation: second-hand 60s linear  infinite; */
-    animation: second-hand2 60s steps(60);
+    animation: second-hand2 60s steps(60) infinite;
 }
 
 @keyframes second-hand2 {
